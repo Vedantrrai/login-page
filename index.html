@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      display: flex;
+      width: 900px;
+      height: 500px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .form-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    p {
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .google-login {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #fff;
+      color: #555;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .google-login:hover {
+      background-color: #f7f7f7;
+    }
+    
+    .divider {
+      text-align: center;
+      color: #aaa;
+      margin: 10px 0;
+      position: relative;
+    }
+    
+    .divider span {
+      background-color: #fff;
+      padding: 0 10px;
+    }
+    
+    .divider:before,
+    .divider:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: #ccc;
+      width: 40%;
+      position: absolute;
+      top: 50%;
+    }
+
+    .image-container {
+  flex: 1;
+  background: url('https://wallpaperaccess.com/full/2719454.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+}
+
+    
+    .divider:before {
+      left: 0;
+    }
+    
+    .divider:after {
+      right: 0;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .forgot-password {
+      color: #555;
+      text-decoration: none;
+      font-size: 12px;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+    
+    .login-button {
+      padding: 10px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .login-button:hover {
+      background-color: #333;
+    }
+    
+    .signup-text {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    
+    .signup-text a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+    
+    .image-container {
+      flex: 1;
+      background: url('https://wallpaperaccess.com/full/8669687.jpg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: #fff;
+    }
+    
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <img src="https://logodix.com/logo/1723734.png" alt="Logo" class="logo">
+        <h1>👋 Hi There!</h1>
+        <p>Welcome, Community Dashboard</p>
+      </div>
+      <button class="google-login">Log in with Google</button> 
+      <div class="divider">
+        <span>or</span>
+      </div>
+      <form>
+        <input type="email" placeholder="Your Email" required>
+        <input type="password" placeholder="Your Password" required>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button type="submit" class="login-button">Log in</button>
+      </form>
+      <p class="signup-text">Don’t have an account? <a href="#">Sign up</a></p>
+    </div>
+    <div class="image-container">
+      <div class="overlay">
+        <h2>"Process is more important than result"</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
